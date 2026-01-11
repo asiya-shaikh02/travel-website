@@ -351,3 +351,21 @@ section:target {
 .about-box, .plan-box {
     padding-bottom: 25px !important; /* Forces the box to end closer to the name */
 }
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: black; /* fallback */
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
